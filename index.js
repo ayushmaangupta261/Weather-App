@@ -10,6 +10,8 @@ const userInfoContainer = document.querySelector(".user-info-container");
 
 const errorImage = document.querySelector(".error");
 
+const grantAccessButton = document.querySelector("[data-grantAccess]");
+
 // initial variables needed
 let currentTab = searchTab;
 searchForm.classList.add("active");
@@ -58,7 +60,8 @@ function getFromSessionStorage() {
         // agar local coorinates nhi mile iska matlab locationn ka acces nhi  diya gaya hai
         loadingScreen.classList.remove("active");
         grantAccessContainer.classList.add("active");
-        getLocation();
+        grantAccessButton.addEventListener("click", getLocation());
+        // getLocation();
     }
     else {
         const coordinates = JSON.parse(localCoordinates);
@@ -134,8 +137,8 @@ function showPosition(position) {
     fetchUserWeatherInfo(userCoordinates);
 }
 
-const grantAccessButton = document.querySelector("[data-grantAccess]");
-grantAccessButton.addEventListener("click", getLocation());
+
+
 
 const searchInput = document.querySelector("[data-serachInput]");
 
