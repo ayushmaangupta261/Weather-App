@@ -59,8 +59,8 @@ function getFromSessionStorage() {
     if (!localCoordinates) {
         // agar local coorinates nhi mile iska matlab locationn ka acces nhi  diya gaya hai
         loadingScreen.classList.remove("active");
-        grantAccessContainer.classList.add("active");
-        //grantAccessButton.addEventListener("cli//ck", getLocation());
+      //  grantAccessContainer.classList.add("active");
+        //grantAccessButton.addEventListener("click", getLocation());
          getLocation();
     }
     else {
