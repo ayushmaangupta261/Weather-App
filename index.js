@@ -135,7 +135,7 @@ function showPosition(position) {
 }
 
 const grantAccessButton = document.querySelector("[data-grantAccess]");
-grantAccessButton.addEventListener("click", getLocation);
+grantAccessButton.addEventListener("click", getLocation());
 
 const searchInput = document.querySelector("[data-serachInput]");
 
