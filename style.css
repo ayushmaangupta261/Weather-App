@@ -141,7 +141,7 @@ h1 {
 /* user info container */
 .user-info-container {
   display: none;
-  margin-top: 8%;
+   margin-top: 5%;
   margin-bottom: 3%;
 }
 .user-info-container.active {
